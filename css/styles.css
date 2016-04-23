@@ -1,0 +1,263 @@
+/*Universal Styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+title {
+  display: none;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  color: #222d47;
+  font-family: 'Bitter', serif;
+}
+
+main {
+	padding: 0 10px;
+}
+
+/*Section Styles*/
+
+
+/*Heading*/
+
+header {
+  background-color: #222d47;
+}
+
+#title {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  padding: 1.5em;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+h1,
+legend {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.intro h1 {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .3);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro p {
+  margin: 5px auto 1.5em;
+}
+
+.intro {
+  border-bottom: 5px solid #222d47;
+}
+
+.bottom-border {
+  border-bottom: 3px solid #222d47;
+  padding-bottom: 4px;
+}
+
+
+/*Form*/
+
+fieldset {
+  border: none;
+  text-align: left;
+  padding: 0;
+}
+
+legend {
+  padding: 1em 0;
+}
+
+.contact-info {
+  border-bottom: 3px solid #222d47;
+}
+
+label, input, textarea, select {
+  display: block;
+  margin-top: .5em;
+}
+
+label, select {
+	  margin-top: 10px;
+}
+
+.row input,
+select,
+textarea{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .1);
+  border: none;
+  width: 100%;
+  padding: 1.2em;
+}
+
+textarea {
+  height: 8em;
+}
+
+input:placeholder-shown {
+  text-align: right;
+  font-style: italic;
+}
+
+#zip {
+  width: 50%;
+}
+
+select {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.newsletter {
+	width: 100%;
+}
+
+.newsletter label,
+.newsletter input,
+.newsletter {
+  display: inline-block;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid #222d47;
+  outline: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+.checkbox,
+.radio {
+	margin-top: 5px;
+}
+
+.newsletter label {
+	margin-top: 10px;
+}
+
+.news-section {
+	margin-bottom: 20px;
+}
+
+input[type=checkbox] + span:before,
+input[type=radio] + span:before {
+  content: '';
+  display:inline-block;
+  background-color: rgba(0,0,0,.1);
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+input[type=checkbox] + span:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+input[type=checkbox]:checked + span:before {
+ background-image: url('../checkbox.svg');
+}
+
+input[type=radio] + span:before {
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.1);
+  border-radius: 50%;
+}
+
+input[type=radio]:checked + span:before {
+  border: 2px solid white;
+  background-color: #222d47;
+  box-shadow: 0 0 0 3px #222d47;
+  width: 10px;
+  height: 10px; 
+}
+
+button {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	color: white;
+	background-color: #222d47;
+	border: none;
+	height: 4em;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+button:focus {
+	background-color: #849edc;
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+
+footer {
+	padding: 15px;
+}
+
+.copyright {
+	font-style: italic;
+}
+
+/*Media Query */
+
+@media screen and (min-width: 760px) {
+
+main {
+	width: 60%;
+	margin: 0 auto;
+	}
+
+.contact-info label,
+.contact-info input,
+.contact-info select {
+	display: inline-block;
+}
+
+.contact-info label {
+	width: 30%;
+	float: left;
+}
+
+.contact-info input,
+.contact-info select {
+	width: 70%;
+	float: right;
+}
+
+.row {
+	clear:both;
+	margin-bottom: 70px; 
+}
+
+#zip {
+	float: left;
+	width: 30%;
+}
+
+.intro {
+	padding: 3em 0;
+}
+}
