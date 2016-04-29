@@ -84,6 +84,7 @@ legend {
 
 .contact-info {
   border-bottom: 3px solid #222d47;
+  padding-bottom: 20px;
 }
 
 label, input, textarea, select {
